@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,7 +27,7 @@ SECRET_KEY = 'django-insecure-cdqx+9p(r%w@h(d$0n-ja^@w$o%%23#6js_=yy%s8qsy$wb5!b
 DEBUG = True
 
 ALLOWED_HOSTS = [".onrender.com", "localhost",".now.sh",".render.com"]
-RENDER_EXTERNAL_HOSTNAME = config("RENDER_EXTERNAL_HOSTNAME")
+RENDER_EXTERNAL_HOSTNAME = "final-year-project-au-class-portal.onrender.com"
 ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME) if RENDER_EXTERNAL_HOSTNAME else []
 
 

@@ -6,7 +6,6 @@ certifi==2024.8.30
 charset-normalizer==3.3.2
 click==8.1.7
 colorama==0.4.6
-decouple==0.0.7
 Django==5.1.2
 django-ckeditor==6.7.1
 django-js-asset==2.2.0
