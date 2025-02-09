@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-cdqx+9p(r%w@h(d$0n-ja^@w$o%%23#6js_=yy%s8qsy$wb5!b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [".onrender.com", "localhost",".now.sh",".render.com"]
+ALLOWED_HOSTS = [".onrender.com", "localhost",".now.sh",".render.com","127.0.0.1"]
 RENDER_EXTERNAL_HOSTNAME = "final-year-project-au-class-portal.onrender.com"
 ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME) if RENDER_EXTERNAL_HOSTNAME else []
 
