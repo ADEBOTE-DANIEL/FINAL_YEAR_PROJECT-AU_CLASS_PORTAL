@@ -44,7 +44,7 @@ def compare_assignments(student_text, teacher_text):
     ]
     )
 
-    prompt = "Please compare the first document to the provided answer key in the second document. Grade the document based on accuracy, completeness, structure, and clarity. Use a scale of 0-100, where 100 is a perfect match with the answer keyand return only the score please"
+    prompt = "Please compare the first document to the provided answer key in the second document. Grade the document based on accuracy, completeness, structure, and clarity. Use a scale of 0-100, where 100 is a perfect match with the answer key and 0 where there is no match with the answer key. return only the score please"
     response = model.generate_content([prompt, teacher_text, student_text])
     grade = int(response.text.split('.')[0])
     # if ( grade < 66 ) :
