@@ -57,7 +57,7 @@
     <li><a class="subheader">Learning</a></li>
     <li><a href="{% url 'categories' %}"><i class="material-icons">menu_book</i>Courses</a></li>
     <li><a href="{% url 'inbox' %}"><i class="material-icons">inbox</i>Inbox{% if directs_count %}<span class="new badge red">{{ directs_count }}</span>{% endif %}</a></li>
-    <li><a href=""><i class="material-icons">circle_notifications</i>Notifications</a></li>
+    {% comment %} <li><a href=""><i class="material-icons">circle_notifications</i>Notifications</a></li> {% endcomment %}
     <li><div class="divider"></div></li>
     <li><a class="subheader">Teaching</a></li>
     <li><a href="{% url 'my-courses' %}"><i class="material-icons">menu_book</i>Your courses</a></li>
